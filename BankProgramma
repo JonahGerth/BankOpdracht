@@ -1,0 +1,17 @@
+
+public class BankProgramma {
+	
+	public static void main(String [] args) {
+	
+		Bankrekening brekening = new Bankrekening(1000, "NL90INGB12345");
+		Persoon pers = new Persoon("Jan");
+		Bank bank = new Bank();
+		
+		bank.GeldPinnen(pers);
+		brekening.GeldOpnemen(pers);
+		brekening.SaldoOpvragen(pers);
+		brekening.GeldStorten(pers);
+		brekening.SaldoOpvragen(pers);
+		
+	}
+}
