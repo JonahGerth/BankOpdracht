@@ -1,0 +1,14 @@
+
+public class Bank{
+
+	void GeldPinnen(Persoon pers) {
+		if (pers.pas.volleBankpas) {
+			System.out.println("Welkom bij de bank "+ pers.naam + ".");
+			
+		}else{
+			System.out.println("Je geld is op, je kan niet pinnen " + pers.naam + ".");
+			System.exit(0);
+		}
+	}
+}
+
