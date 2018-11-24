@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Bankrekening {
+	
+	private String rekNummer;
+	private int geld;
+	Scanner scan = new Scanner(System.in);
+	
+	Bankrekening (int geld, String rekNummer){
+		
+		this.geld = geld;
+		this.rekNummer = rekNummer;
+	}
+
+	void GeldOpnemen(Persoon pers) {
+		System.out.println("hoeveel geld wilt u opnemen ");
+		int opneemgeld = scan.nextInt();
+		System.out.println("Er is "+ opneemgeld + " euro afgeschreven van uw rekeningnummer " + rekNummer);
+		geld -= opneemgeld;
+		
+	}
+	
+	void GeldStorten(Persoon pers) {
+		
+		System.out.println("hoeveel geld wilt u storten ");
+		int stortgeld = scan.nextInt();
+		System.out.println("Er is "+ stortgeld + " euro bijgeschreven op rekeningnummer " + rekNummer);
+		geld += stortgeld;
+		 
+	}
+	
+	void SaldoOpvragen(Persoon pers) {
+		
+		System.out.println("Uw nieuwe saldo is "+ geld);
+		
+	}
+}
