@@ -1,0 +1,10 @@
+
+public class Persoon{
+	
+	String naam;
+	Bankpas pas = new Bankpas();
+	
+		Persoon(String naam){
+		this.naam = naam;
+	}
+}
