@@ -1,0 +1,6 @@
+
+public class Bankpas{
+	
+	boolean volleBankpas = true;
+
+}
